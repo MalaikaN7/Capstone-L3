@@ -1,7 +1,4 @@
 
----
-
-```markdown
 # 🧠 Hyperion Django App
 
 This is a Django web application that includes user authentication, a blog, and a polling system.
