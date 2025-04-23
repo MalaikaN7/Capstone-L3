@@ -1,0 +1,15 @@
+{% include 'header.html' %}
+<h2 class="mb-4">Blog Posts</h2>
+{% for post in object_list %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.body|truncatewords:30 }}</p>
+            <a href="{% url 'blog:post_detail' post.pk %}" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+{% endfor %}
+<h2><a href="{% url 'home' %}" class="btn btn-secondary">Go To Home Page</a></h2>
+</div>
+</body>
+</html>

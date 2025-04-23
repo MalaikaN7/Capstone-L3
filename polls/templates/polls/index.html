@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Polls</h1>
+    <p>Welcome to the polls section. Please choose a poll to vote on.</p>
+    <ul>
+        {% for poll in questions %}
+            <li>
+                <a href="{% url 'polls:detail' poll.id %}">{{ poll.question_text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

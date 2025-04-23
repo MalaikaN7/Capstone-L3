@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+local_settings.py
+media
+staticfiles
+static_root/
+static/
+.env
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+coverage.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pipenv
+Pipfile.lock
+
+# pytest
+.pytest_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# Docker
+*.pid
+*.seed
+*.bak
+*.swp
+docker-compose.override.yml
+
+# Other
+*.bak
+*.tmp
+*.log
+*.orig

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="text-center mt-5">
+        {% if user.is_authenticated %}
+            <h1 class="mb-3">Welcome to your Dashboard</h1>
+            <p class="lead">You're logged in as <strong>{{ user.username }}</strong></p>
+            <h2><a class="btn btn-primary mt-3" href="{% url 'polls:index' %}">Go To Polls</a></h2>
+            <h2><a class="btn btn-primary mt-3" href="{% url 'blog:blog' %}">Go To Blog</a></h2>
+        {% else %}
+            <h1 class="mb-3">Welcome to the Home Page</h1>
+            <p class="lead">Please log in or register</p>
+            <div class="mt-4">
+                <a class="btn btn-success me-2" href="{% url 'login' %}">Login</a>
+                <a class="btn btn-outline-primary" href="{% url 'register' %}">Register</a>
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
